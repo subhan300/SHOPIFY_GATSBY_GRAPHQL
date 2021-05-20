@@ -43,28 +43,28 @@
 // export default Cart
 import React, { useEffect, useState } from "react"
 
-import Client from 'shopify-buy'
+// import Client from 'shopify-buy'
 
-const client = Client.buildClient({
-  domain:'dress-online-shopsss.myshopify.com',
-    storefrontAccessToken:'a7311c09653d246f1364ce28963a3c5c'
-})
+// const client = Client.buildClient({
+//   domain:'dress-online-shopsss.myshopify.com',
+//     storefrontAccessToken:'a7311c09653d246f1364ce28963a3c5c'
+// })
 
 export default function Cart() {
 
-    const [checkoutSession, setCheckoutSession] = useState();
-    useEffect(()=>{
-        (async()=>{
-            const session = await client.checkout.fetch(localStorage.getItem("checkoutid"));
-            setCheckoutSession(session);
-            console.log("session loadded test = ",session);
-            console.log("checkoutSession.lineItems = ",session.lineItems);
-        })()
-    },[]);
+    // const [checkoutSession, setCheckoutSession] = useState();
+    // useEffect(()=>{
+    //     (async()=>{
+    //         const session = await client.checkout.fetch(localStorage.getItem("checkoutid"));
+    //         setCheckoutSession(session);
+    //         console.log("session loadded test = ",session);
+    //         console.log("checkoutSession.lineItems = ",session.lineItems);
+    //     })()
+    // },[]);
     return (
         <div>
             <div>Cart</div>
-            <div>
+            {/* <div>
                 <button onClick={()=>{
 
                     window.open(checkoutSession.webUrl);
@@ -109,7 +109,7 @@ export default function Cart() {
                         </div>
                 </div>
                 ))
-            }
+            } */}
         </div>
     );
 }
