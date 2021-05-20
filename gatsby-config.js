@@ -14,6 +14,10 @@ module.exports = {
   
         // The storefront access token
         accessToken:process.env.ACESS_TOKEN,
+        apiVersion: "2020-04",
+        verbose: true,
+        paginationSize: 250,
+        includeCollections: ["shop", "content"],
       },
     },
   ]
