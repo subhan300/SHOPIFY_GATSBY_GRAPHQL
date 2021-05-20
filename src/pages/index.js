@@ -1,6 +1,6 @@
-import { gql, useMutation } from "@apollo/client";
+// import { gql, useMutation } from "@apollo/client";
 import React, { useEffect } from "react"
-import {Link } from  "gatsby"
+
 import Header from "../components/GlobalComponents/Header/Header"
 import Footer from "../components/GlobalComponents/Header/Footer"
 // const createCheckout = gql`
