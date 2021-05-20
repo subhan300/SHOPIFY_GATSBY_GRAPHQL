@@ -3,67 +3,67 @@ import React, { useEffect } from "react"
 import {Link } from  "gatsby"
 import Header from "../components/GlobalComponents/Header/Header"
 import Footer from "../components/GlobalComponents/Header/Footer"
-const createCheckout = gql`
-mutation checkoutCreate($input: CheckoutCreateInput!) {
-  checkoutCreate(input: $input) {
-    checkout {
-      id
-      webUrl
-      lineItems(first:100){
-        edges{
-          node{
-            quantity
-            id
-            title,
-            variant{
-              id
-              priceV2{
-                amount
-              }
-            }
-          }
-        }
-      }
-    }
-    checkoutUserErrors {
-      code
-      field
-      message
-    }
-  }
-}
-`
+// const createCheckout = gql`
+// mutation checkoutCreate($input: CheckoutCreateInput!) {
+//   checkoutCreate(input: $input) {
+//     checkout {
+//       id
+//       webUrl
+//       lineItems(first:100){
+//         edges{
+//           node{
+//             quantity
+//             id
+//             title,
+//             variant{
+//               id
+//               priceV2{
+//                 amount
+//               }
+//             }
+//           }
+//         }
+//       }
+//     }
+//     checkoutUserErrors {
+//       code
+//       field
+//       message
+//     }
+//   }
+// }
+// `
 
-const addLineItem = gql`
-mutation checkoutLineItemsAdd($lineItems: [CheckoutLineItemInput!]!, $checkoutId: ID!) {
-  checkoutLineItemsAdd(lineItems: $lineItems, checkoutId: $checkoutId) {
-    checkout {
-      id
-      webUrl
-      lineItems(first:100){
-        edges{
-          node{
-            quantity
-            id
-            title,
-            variant{
-              id
-              priceV2{
-                amount
-              }
-            }
-          }
-        }
-      }
-    }
-    checkoutUserErrors {
-      code
-      field
-      message
-    }
-  }
-}
-`
+// const addLineItem = gql`
+// mutation checkoutLineItemsAdd($lineItems: [CheckoutLineItemInput!]!, $checkoutId: ID!) {
+//   checkoutLineItemsAdd(lineItems: $lineItems, checkoutId: $checkoutId) {
+//     checkout {
+//       id
+//       webUrl
+//       lineItems(first:100){
+//         edges{
+//           node{
+//             quantity
+//             id
+//             title,
+//             variant{
+//               id
+//               priceV2{
+//                 amount
+//               }
+//             }
+//           }
+//         }
+//       }
+//     }
+//     checkoutUserErrors {
+//       code
+//       field
+//       message
+//     }
+//   }
+// }
+// `
 
 
 
@@ -72,26 +72,26 @@ mutation checkoutLineItemsAdd($lineItems: [CheckoutLineItemInput!]!, $checkoutId
 // ***************************************************************************************************
 
 export default function Home({ data }) {
-  const [createCheckoutMutation, {data:checkoutData}] = useMutation(createCheckout);
-  const[ADD_LINE_ITEMS,{data:Add_checkoutData}]=useMutation(addLineItem)
+  // const [createCheckoutMutation, {data:checkoutData}] = useMutation(createCheckout);
+  // const[ADD_LINE_ITEMS,{data:Add_checkoutData}]=useMutation(addLineItem)
   
  
 
-  useEffect(()=>{
-    (async()=>{
+  // useEffect(()=>{
+  //   (async()=>{
       
-      const response = await createCheckoutMutation({
-        variables: {
-          input: {}
-        }
-      });
+  //     const response = await createCheckoutMutation({
+  //       variables: {
+  //         input: {}
+  //       }
+  //     });
      
     
-    })()
+  //   })()
     
 
 
-  },[])
+  // },[])
 
 
 
@@ -133,22 +133,22 @@ export default function Home({ data }) {
                       <div><p>{node.description}</p></div>
                       <div>
                         <button 
-                      onClick={async()=>{
-                   const ResposneAfterAdd=await ADD_LINE_ITEMS({
-                          variables:{
-                            lineItems: [
-                              {
-                                quantity: 1,
-                                variantId:node.variants[0].id.split("__")[2]
-                              }
-                            ],
-                            checkoutId:checkoutData.checkoutCreate.checkout.id
-                          }
-                        })
-                  console.log(ResposneAfterAdd,"dekhaozara")
-                      }
+                  //     onClick={async()=>{
+                  //  const ResposneAfterAdd=await ADD_LINE_ITEMS({
+                  //         variables:{
+                  //           lineItems: [
+                  //             {
+                  //               quantity: 1,
+                  //               variantId:node.variants[0].id.split("__")[2]
+                  //             }
+                  //           ],
+                  //           checkoutId:checkoutData.checkoutCreate.checkout.id
+                  //         }
+                  //       })
+                  // console.log(ResposneAfterAdd,"dekhaozara")
+                  //     }
                    
-                    }
+                  //   }
                       >ADD TO CART</button>
 
                       {/* sir button */}
