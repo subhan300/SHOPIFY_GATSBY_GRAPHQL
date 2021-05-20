@@ -1,0 +1,34 @@
+
+.counterup_section{
+    padding: 120px 0;
+    position: relative;
+    z-index: 2;
+}
+.counterup_section .counterup{
+    text-align: center;
+}
+.counterup_section .counterup h2{
+    font-size: 83px;
+}
+.counterup_section .counterup p{
+    font-size: 30px;
+    color: #515151;
+}
+
+@media(max-width:767px){
+    .counterup_section{
+        padding: 80px 0;
+    }
+    .counterup_section .counterup{
+        padding: 50px;
+    }
+}
+
+@media(max-width:575px){ 
+
+    .counterup_section .counterup{
+        padding: 20px;
+    }
+
+}
+

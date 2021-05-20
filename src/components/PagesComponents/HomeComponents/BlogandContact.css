@@ -1,0 +1,807 @@
+
+.blog-section{
+    padding-top: 320px;
+    background: url(../../../assets/all\ \ \ images/footer-bg.png) no-repeat center bottom;
+    background-size: contain;
+    /* overflow: hidden; */
+}
+.blog-section .blog_left{
+    position: relative;
+    z-index: 2;
+}
+.blog-section .blog_left h6{
+    font-size: 27px;
+    letter-spacing: 10px;
+    padding-bottom: 40px;
+}
+.blog-section .blog_left h1{
+    font-size: 55px;
+}
+.blog-section .blog_left .blog_shape{
+    position: relative;
+    bottom: -280px;
+}
+.blog-section .blog_left .blog_shape img{
+    max-width: 100%;
+}
+.blog-section .blog_right{}
+.blog-section .blog_right .slider_area{
+    padding: 25px;
+    background: #fff;
+    box-shadow: 0 0 40px rgba(0, 0, 0, .3);
+    max-width: 750px;
+    margin: 0 auto;
+    /* overflow: hidden; */
+}
+.blog-section .blog_right .slider_area .item{
+}
+.blog-section .blog_right .slider_area .item img{
+    max-width: 100%;
+}
+.blog-section .blog_right .owl-nav{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 0;
+    display: flex;
+    justify-content: space-between;
+    left: -29px;
+}
+.blog-section .blog_right .owl-nav .owl-prev{
+    background: url(../../../assets/all\ \ \ images/btn-right.png) no-repeat;
+    height: 40px;
+    width: 44px;
+    background-size: cover;
+}
+.blog-section .blog_right .owl-nav .owl-next{
+    background: url(../../../assets/all\ \ \ images/btn-right.png) no-repeat;
+    height: 40px;
+    width: 44px;
+    background-size: cover;
+    position: relative;
+    right: -37px;
+}
+.blog-section .blog_right .slider_content{
+    padding-top: 70px;
+}
+.blog-section .blog_right .slider_content h4{
+    font-size: 27px;
+    color: #30d3a6;
+    letter-spacing: 13px;
+}
+.blog-section .blog_right .slider_content h1{
+    font-size: 55px;
+    padding-bottom: 20px;
+}
+.blog-section .blog_right .slider_content p{
+    font-size: 22px;
+    padding-bottom: 40px;
+}
+.blog-section .blog_right .slider_content .theme_btn{
+    letter-spacing: 10px;
+    max-width: 200px;
+    font-size: 18px;
+}
+
+.contact_section{
+    /* background: url(../images/contact-bg.png) bottom center; */
+    background-size: cover;
+    padding-top: 260px;
+    padding-bottom: 220px;
+}
+.contact_section .contact_left{}
+.contact_section .contact_left h6{
+    font-size: 27px;
+    padding-bottom: 50px;
+    letter-spacing: 10px;
+}
+.contact_section .contact_left h2{
+    font-size: 55px;
+    padding-bottom: 30px;
+}
+.contact_section .contact_left h4{
+    font-size: 27px;
+    letter-spacing: 10px;
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+.contact_section .contact_left h4::before{
+    position: absolute;
+    content: '';
+    display: block;
+    top: 0;
+    left: 0;
+    height: 5px;
+    width: 100px;
+    background: #1265f6;
+}
+.contact_section .contact_left a{
+    display: block;
+    font-size: 25px;
+    color: #1265f6;
+    font-family: 'nhu';
+}
+.contact_section .contact_left p{
+    font-size: 25px;
+    color: #1265f6;
+}
+.contact_section .contact_form{
+    margin-top: 800px;
+}
+.contact_section .contact_form .form-control{
+    box-shadow: none;
+    border: none;
+    line-height: 50px;
+    margin-bottom: 30px;
+    padding: 0 15px;
+    border-radius: 25px;
+}
+.contact_section .contact_form textarea{
+    height: 320px;
+    width: 100%;
+    border-radius: 30px;
+    border: none;
+    box-shadow: none;
+    padding: 20px;
+}
+.contact_section .contact_form .input_group{
+    display: flex;
+    justify-content: space-between;
+}
+.contact_section .contact_form .input_group .form-control{
+    max-width: 48%;
+}
+.contact_section .contact_form .theme_btn{
+    display: block;
+    width: 200px;
+    letter-spacing: 10px;
+    font-size: 22px;
+    border: none;
+    outline: none;
+    margin-top: 30px;
+}
+
+
+
+
+.barfiller {
+    width: 100%;
+    height: 30px;
+    background: #1265f6;
+    position: relative;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    overflow: hidden;
+  }
+  
+  .barfiller .fill {
+    display: block;
+    position: relative;
+    width: 0px;
+    height: 100%;
+    background: #333;
+    z-index: 1;
+    border-radius: 15px;
+  }
+  
+  .barfiller .tipWrap { display: none; }
+  
+  .barfiller .tip {
+    margin-top: -30px;
+    padding: 2px 4px;
+    font-size: 11px;
+    color: #fff;
+    left: 0px;
+    position: absolute;
+    z-index: 2;
+    background: #333;
+  }
+  
+  .barfiller .tip:after {
+    border: solid;
+    border-color: rgba(0,0,0,.8) transparent;
+    border-width: 6px 6px 0 6px;
+    content: "";
+    display: block;
+    position: absolute;
+    left: 9px;
+    top: 100%;
+    z-index: 9
+  }
+
+
+
+
+
+
+
+
+
+  @media (min-width: 1450px) and (max-width: 1650px){
+    .container{
+        max-width: 1300px;
+    }
+    .hero_section::after{
+        height: 1090px;
+        width: 340px;
+        background-size: contain;
+    }
+    .blog-section .blog_left h1{
+        font-size: 45px;
+    }
+    .testimonial_section .page_wraper::before{
+        height: 1470px;
+        background-size: contain;
+    }
+    
+    .contact_section .contact_left h2{
+        font-size: 40px;
+    }
+    .contact_section .contact_form{
+        margin-top: 500px;
+    }
+    
+@media(max-width:1550px){
+    .service_section::after{
+        background-size: contain;
+        height: 100%;
+    }
+}
+@media(max-width:1366px){
+    .skill_section .skill_content h1{
+        font-size: 30px;
+    }
+    .contact_section .contact_left h2{
+        font-size: 40px;
+    }
+    
+    .footer_section .footer_logo p{
+        max-width: 550px;
+    }
+    .barfiller {
+        height: 15px;
+        margin-bottom: 10px;
+    }
+}
+
+}
+@media (min-width: 1200px) and (max-width: 1449px){
+    .hero_section{
+        background-size: contain;
+        padding-top: 230px;
+    }
+    .counterup_section .counterup p{
+        font-size: 20px;
+    }
+    .skill_section::after{
+        height: 950px;
+        width: 336px;
+        background-size: contain;
+    }
+    .service_section{
+        padding: 100px 0;
+    }
+    .hero_section .hero_content h4{
+        padding-bottom: 50px;
+    }
+    .hero_section::after {
+        height: 880px;
+        width: 240px;
+    }
+    .contact_section .contact_form{
+        margin-top: 500px;
+    }
+    .container{
+        max-width: 1170px;
+    }
+    .testimonial_section .page_wraper::before{
+        height: 1050px;
+        background-size: contain;
+    }
+    .hero_section::after{
+        height: 1160px;
+        width: 340px;
+        background-size: contain;
+    }
+    .hero_section .hero_content h1{
+        font-size: 100px;
+    }
+    .hero_section .hero_content h4{
+        font-size: 40px;
+    }
+    
+    .sobremi_section{
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+    .sobremi_section .header-area h3{
+        font-size: 40px;
+    }
+    .service_section .left_content h1{
+        font-size: 40px;
+    }
+    .skill_section .skill_content h1{
+        font-size: 40px;
+    }
+    .blog-section .blog_left h1{
+        font-size: 40px;
+    }
+    .blog-section .blog_right .slider_content h1{
+        font-size: 40px;
+        padding-bottom: 10px;
+    }
+    .contact_section .contact_left h2{
+        font-size: 40px;
+    }
+    .counterup_section .counterup h2{
+        font-size: 70px;
+    }
+    .contact_section .contact_left h2{
+        font-size: 40px;
+    }
+    .skill_section .skill_content h6{
+        padding-bottom: 10px;
+        font-size: 20px;
+    }
+    .skill_section .skill_content h1{
+        padding-bottom: 20px;
+    }
+    .barfiller{
+        height: 15px;
+        margin-bottom: 10px;
+    }
+    .skill_section .skill_content .progress_bar p{
+        padding-bottom: 10px;
+        font-size: 16px;
+    }
+    .skill_section .skill_content ul li a{
+        height: 80px;
+        width: 80px;
+    }
+    .skill_section::after {
+        height: 720px;
+        width: 276px;
+        background-size: contain;
+    }
+    .skill_section {
+        padding-bottom: 50px;
+    }
+    .portafolio_section::before{
+        background-size: contain;
+        height: 750px;
+        width: 220px;
+        top: -320px;
+    }
+    .contact_section .contact_form{
+        margin-top: 300px;
+    }
+    .blog-section{
+        padding-top: 90px;
+    }
+    .blog-section .blog_right .slider_content{
+        padding-top: 40px;
+    }
+    .blog-section .blog_right .slider_content p{
+        padding-bottom: 20px;
+    }
+    .contact_section{
+        padding-bottom: 60px;
+    }
+    .service_section::after {
+        background-size: contain;
+        height: 100%;
+    }
+}
+
+
+
+@media (min-width: 992px) and (max-width: 1199px){
+    .contact_section .contact_form{
+        margin-top: 300px;
+    }
+    .testimonial_section .page_wraper::before{
+        height: 1270px;
+        background-size: contain;
+    }
+    .service_section .left_content h1{
+        font-size: 40px;
+    }
+    .counterup_section .counterup h2{
+        font-size: 70px;
+    }
+    .hero_section::after{
+        height: 970px;
+        width: 320px;
+    }
+    .hero_section::after{
+        height: 1330px;
+        width: 340px;
+        background-size: contain;
+    }
+    .hero_section::after{
+        height: 700px;
+        width: 210px;
+        background-size: contain;
+    }
+    .hero_section .hero_content h1{
+        font-size: 80px;
+    }
+    .hero_section .hero_content h4{
+        font-size: 30px;
+        padding-bottom: 20px;
+    }
+
+    .hero_section {
+        padding-top: 210px;
+        padding-bottom: 80px;
+        background-size: cover;
+    }
+    .barfiller {
+        height: 15px;
+        margin-bottom: 10px;
+    }
+    .counterup_section .counterup p{
+        font-size: 16px;
+    }
+    .service_section::after {
+        background-size: contain;
+        height: 100%;
+    }
+    .sobremi_section .header-area h3{
+        font-size: 40px;
+    }
+    .skill_section .skill_content h1{
+        font-size: 40px;
+    }
+    .contact_section .contact_left h2{
+        font-size: 40px;
+    }
+    .footer_section .footer_logo p{
+        max-width: 550px;
+    }
+    
+}
+@media(max-width:1136px){
+    .service_section .left_content h1{
+        font-size: 40px;
+    }
+    .service_item .item h6{
+        font-size: 20px;
+    }
+    .skill_section::after{
+        height: 1130px;
+        width: 630px;
+        left: -170px;
+        top: 30px;
+        background-size: contain;
+    }
+    .testimonial_section .page_wraper::before {
+        height: 880px;
+        width: 500px;
+        top: -720px;
+        left: 0;
+        background-size: cover;
+    }
+    .blog-section .blog_left h1{
+        font-size: 40px;
+    }
+    .blog-section .blog_right .slider_content h1{
+        font-size: 45px;
+    }
+    .barfiller {
+        height: 15px;
+        margin-bottom: 10px;
+    }
+}
+
+
+@media(max-width:991px){
+    .contact_section .contact_form{
+        margin-top: 0;
+        margin-top: 50px;
+    }
+    .portafolio_section{
+        padding-top: 80px;
+    }
+    .portafolio_section::before{
+        display: none;
+    }
+    .hero_section .hero_content .hero_logo{
+        position: unset;
+        margin-top: 30px;
+        text-align: right;
+    }
+    .hero_section{
+        background-size: contain;
+        padding-top: 160px;
+        padding-bottom: 0;
+    }
+    .hero_section .hero_content h1{
+        font-size: 60px;
+    }
+    .hero_section .hero_content h4{
+        font-size: 25px;
+        padding-bottom: 30px;
+    }
+    .hero_section::after{
+        background-size: contain;
+        height: 570px;
+        width: 190px;
+    }
+    .hero_section .hero_content p{
+        font-size: 16px;
+        max-width: 600px;
+    }
+    .sobremi_section {
+        padding-bottom: 80px;
+    }
+    .sobremi_section .header-area h3{
+        font-size: 40px;
+    }
+    .counterup_section .counterup h2{
+        font-size: 50px;
+    }
+    .counterup_section .counterup p{
+        font-size: 20px;
+    }
+    .service_section::after{
+        display: none;
+    }
+    .service_section{
+        padding-top: 120px;
+    }
+    .service_section .service_images{
+        padding: 70px 0;
+    }
+    .skill_section::after{
+        display: none;
+    }
+    .skill_section .skill_images{
+        display: block;
+        text-align: center;
+        padding-bottom: 50px;
+    }
+    .portafolio_section{
+        bottom: 0;
+        padding-bottom: 80px;
+    }
+    .page_wraper{
+        display: none;
+    }
+    .testimonial_section{
+        padding: 120px 0;
+    }
+    .testimonial_section .testimonial_caros .owl-nav{
+        top: 0;
+        text-align: center;
+        margin-top: 50px;
+    }
+    .blog-section{
+        padding-top: 120px;
+    }
+    .blog-section .blog_left .blog_shape{
+        display: none;
+    }
+    .blog-section .blog_left h1{
+        padding-bottom: 50px;
+    }
+    .contact_section .contact_left{
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .contact_section .contact_left h4{
+        display: inline-block;
+    }
+    .contact_section .contact_left h2{
+        padding-bottom: 50px;
+    }
+    .contact_section{
+        padding: 0;
+    }
+    .footer_section .footer_logo{
+        display: block;
+        text-align: center;
+    }
+    .footer_section .footer_logo p{
+        max-width: 100%;
+        text-align: center;
+        padding: 50px 0;
+    }
+    .footer_section .bottom{
+        display: block;
+        text-align: center;
+    }
+    .barfiller{
+        height: 15px;
+    }
+    .sobremi_section .header-area h6{
+        font-size: 20px;
+    }
+    .sobremi_section .header-area h3{
+        font-size: 30px;
+    }
+    p{
+        font-size: 18px !important;
+    }
+    .service_section .left_content h6{
+        font-size: 20px;
+    }
+    .service_section .left_content h1{
+        font-size: 30px;
+    }
+    .skill_section .skill_content h1{
+        font-size: 30px;
+    }
+    .portafolio_section .header h6{
+        font-size: 20px;
+    }
+    .testimonial_section .testimonial_caros .item h6{
+        font-size: 20px;
+    }
+    .testimonial_section .testimonial_caros .item{
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    .blog-section .blog_left h6{
+        font-size: 20px;
+        padding-bottom: 10px;
+        text-align: center;
+    }
+    .blog-section .blog_left h1{
+        font-size: 30px;
+        text-align: center;
+    }
+    .contact_section .contact_left h2{
+        font-size: 30px;
+    }
+    .contact_section .contact_left h4{
+        font-size: 20px;
+        padding: 10px 0;
+    }
+    .contact_section .contact_left a{
+        font-size: 16px;
+    }
+    .blog-section .blog_right .slider_content h4{
+        font-size: 20px;
+    }
+    .blog-section .blog_right .slider_content h1{
+        font-size: 30px;
+    }
+    .contact_section .contact_form{
+        padding-bottom: 80px;
+    }
+    .contact_section{
+        margin-top: 50px;
+    }
+}
+@media(max-width:767px){
+    .counterup_section{
+        padding: 80px 0;
+    }
+    .counterup_section .counterup{
+        padding: 50px;
+    }
+    .contact_section .contact_left h2{
+        font-size: 30px;
+    }
+    .contact_section .contact_form .input_group{
+        display: block;
+    }
+    .contact_section .contact_form .input_group .form-control{
+        max-width: 100%;
+    }
+    .footer_section .footer_logo img{
+        height: 100px;
+    }
+}
+@media(max-width:575px){
+    .hero_section .hero_content h6{
+        font-size: 20px;
+    }
+    .hero_section .hero_content h1{
+        font-size: 50px;
+    }
+    .hero_section .hero_content h4{
+        font-size: 25px;
+        padding-bottom: 20px;
+    }
+    .hero_section .hero_content .hero_logo{
+    text-align: left;
+    height: 130px;
+    width: 160px;
+    }
+    .sobremi_section .header-area h3{
+        font-size: 30px;
+    }
+    .blog-section .blog_left h1{
+        font-size: 30px;
+    }
+    .blog-section .blog_right .slider_content h1{
+        font-size: 30px;
+    }
+    .contact_section .contact_left h4{
+        margin-top: 40px;
+    }
+    .hero_section{
+        padding-top: 100px;
+        padding-bottom: 40px;
+    }
+    .hero_section::after {
+        height: 930px;
+        width: 190px;
+        display: none;
+    }
+    .sobremi_section {
+        padding-bottom: 70px;
+        padding-top: 70px;
+    }
+    .sobremi_section .header-area h6{
+        font-size: 20px;
+    }
+    .sobremi_section .header-area h3 {
+        font-size: 25px;
+    }
+    p{
+        font-size: 16px !important;
+    }
+    .counterup_section .counterup{
+        padding: 20px;
+    }
+    .service_section .left_content h6{
+        font-size: 20px;
+    }
+    .service_section .left_content h1{
+        font-size: 25px;
+    }
+    .service_item .item{
+        margin-bottom: 30px;
+    }
+    .service_item{
+        position: unset;
+        padding: 80px 0;
+    }
+    .skill_section{
+        padding: 80px 0;
+    }
+    .skill_section .skill_content h6{
+        font-size: 20px;
+    }
+    .skill_section .skill_content h1{
+        font-size: 25px;
+    }
+    .skill_section .skill_content .progress_item .progress{
+        height: 15px;
+    }
+    .skill_section .skill_content .progress_item{
+        margin-bottom: 60px;
+    }
+    .skill_section .skill_content .progress_item span{
+        top: -50px;
+    }
+    .skill_section .skill_content ul li a{
+        margin: 10px;
+    }
+    .portafolio_section .portfolio_item{
+        margin-bottom: 30px;
+    }
+    .blog-section .blog_left h6{
+        font-size: 20px;
+    }
+    .blog-section .blog_left h1{
+        font-size: 25px;
+    }
+    .blog-section .blog_right .slider_content h4{
+        font-size: 20px;
+    }
+    .blog-section .blog_right .slider_content h1{
+        font-size: 25px;
+    }
+    .contact_section .contact_left h6{
+        font-size: 20px;
+    }
+    .contact_section .contact_left h2{
+        font-size: 25px;
+    }
+
+}

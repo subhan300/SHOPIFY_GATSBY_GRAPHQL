@@ -1,0 +1,95 @@
+.home{
+    padding-top: 30px;padding:40px;
+}
+
+/*Prefix Styles start*/ 
+
+.container{
+    max-width: 1590px;
+}
+p{
+    margin: 0; 
+}
+li{
+    list-style: none;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+section, header, footer .row{
+    margin: 0; 
+} 
+#success{
+    display: none;
+}
+#error{
+    display: none;
+}  
+iframe{
+    border: none;
+}
+a, .btn, button{
+    outline: none;
+}
+a, .btn, button{
+    outline: none;
+    @include transition;
+}
+a, .btn, button::before, ::after{
+    @include transition;
+}
+a, .btn, button:hover, :focus{
+    outline: none;
+    text-decoration: none;
+    @include transition;
+} 
+body{
+
+}
+h1, h2, h3, h4, h5,h6{
+    font-family: 'Gilroy';
+    font-weight: 900;
+    color: #1265f6;
+    margin: 0;
+}
+p{
+    font-family: 'nhu';
+    font-weight: 400;
+}
+
+/*Prefix Styles end*/ 
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../../../assets/fonts/fonts/Gilroy-ExtraBold.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'nhu';
+    src: url('../../../assets/fonts/fonts/NeueHaasUnicaW06Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+.theme_btn{
+    max-width: 210px;
+    line-height: 40px;
+    border-radius: 10px;
+    background: #1265f6;
+    padding: 0 10px;
+    font-size: 25px;
+    font-family: 'Gilroy';
+    font-weight: 900;
+    color: #fff;
+    display: block;
+    text-align: center;
+    letter-spacing: 4px;
+    transition: all ease-out .4s;
+}
+.theme_btn:hover{
+    background: #30d3a6;
+    color: #fff;
+}
+

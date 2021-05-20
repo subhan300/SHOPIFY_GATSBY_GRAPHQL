@@ -1,0 +1,14 @@
+.slider__wrapperCont {
+    width: 250px;
+    border-radius: 8px;
+    border: 2px solid #F6F7FA;
+    box-shadow: 2px 2px 2px #888888;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+.avatar__card {
+    width: 230px;
+    height: 200px;
+}

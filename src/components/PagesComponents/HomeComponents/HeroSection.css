@@ -1,0 +1,183 @@
+.hero_section{
+    padding-top: 370px;
+    padding-bottom: 190px;
+    background: url(../../../assets/all\ \ \ images/hero-bg.png) no-repeat top left;
+    background-size: cover;
+    position: relative;
+}
+.hero_section::after{
+    position: absolute;
+    content: '';
+    display: block;
+    height: 950px;
+    width: 470px;
+    bottom: -300px;
+    right: 0;
+    background: url(../../../assets/all\ \ \ images/hero-shape.png) no-repeat;
+    z-index: -1;
+}
+.hero_section .hero_content{
+    position: relative;
+}
+.hero_section .hero_content h6{
+    font-size: 28px;
+    color: #30d3a6;
+}
+.hero_section .hero_content h1{
+    font-size: 140px;
+}
+.hero_section .hero_content h4{
+    font-size: 56px;
+    line-height: 40px;
+    padding-bottom: 100px;
+}
+.hero_section .hero_content p{
+    font-size: 21px;
+    color: #515151;
+    max-width: 750px;
+}
+.hero_section .hero_content .hero_logo{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.hero_section .hero_content .hero_logo a{
+    display: block;
+}
+.hero_section .hero_content .hero_logo a img{
+    max-width: 100%;
+}
+.hero_section .hero_content .theme_btn{
+    margin-top: 40px;
+}
+
+
+
+@media (min-width: 1450px) and (max-width: 1650px){
+    .container{
+        max-width: 1300px;
+    }
+    .hero_section::after{
+        height: 1090px;
+        width: 340px;
+        background-size: contain;
+    }
+}
+
+
+@media (min-width: 1200px) and (max-width: 1449px){
+    .hero_section{
+        background-size: contain;
+        padding-top: 230px;
+    }
+    .hero_section .hero_content h4{
+        padding-bottom: 50px;
+    }
+    .hero_section::after {
+        height: 880px;
+        width: 240px;
+    }
+    .container{
+        max-width: 1170px;
+    }
+    .hero_section::after{
+        height: 1160px;
+        width: 340px;
+        background-size: contain;
+    }
+    .hero_section .hero_content h1{
+        font-size: 100px;
+    }
+    .hero_section .hero_content h4{
+        font-size: 40px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px){
+    .hero_section::after{
+        height: 970px;
+        width: 320px;
+    }
+    .hero_section::after{
+        height: 1330px;
+        width: 340px;
+        background-size: contain;
+    }
+    .hero_section::after{
+        height: 700px;
+        width: 210px;
+        background-size: contain;
+    }
+    .hero_section .hero_content h1{
+        font-size: 80px;
+    }
+    .hero_section .hero_content h4{
+        font-size: 30px;
+        padding-bottom: 20px;
+    }
+
+    .hero_section {
+        padding-top: 210px;
+        padding-bottom: 80px;
+        background-size: cover;
+    }
+
+}
+
+
+@media(max-width:991px){ 
+    .hero_section .hero_content .hero_logo{
+        position: unset;
+        margin-top: 30px;
+        text-align: right;
+    }
+    .hero_section{
+        background-size: contain;
+        padding-top: 160px;
+        padding-bottom: 0;
+    }
+    .hero_section .hero_content h1{
+        font-size: 60px;
+    }
+    .hero_section .hero_content h4{
+        font-size: 25px;
+        padding-bottom: 30px;
+    }
+    .hero_section::after{
+        background-size: contain;
+        height: 570px;
+        width: 190px;
+    }
+    .hero_section .hero_content p{
+        font-size: 16px;
+        max-width: 600px;
+    }
+}
+
+@media(max-width:575px){
+    .hero_section .hero_content h6{
+        font-size: 20px;
+    }
+    .hero_section .hero_content h1{
+        font-size: 50px;
+    }
+    .hero_section .hero_content h4{
+        font-size: 25px;
+        padding-bottom: 20px;
+    }
+    .hero_section .hero_content .hero_logo{
+    text-align: left;
+    height: 130px;
+    width: 160px;
+    }
+    .hero_section{
+        padding-top: 100px;
+        padding-bottom: 40px;
+    }
+    .hero_section::after {
+        height: 930px;
+        width: 190px;
+        display: none;
+    }
+
+}

@@ -1,0 +1,198 @@
+.skill_section{
+    padding: 160px 0;
+    background: url(../../../assets/all\ \ \ images/pattern.png) bottom right;
+    background-size: cover;
+    position: relative;
+    z-index: 10;
+}
+.skill_section::after{
+    position: absolute;
+    content: '';
+    display: block;
+    height: 1230px;
+    width: 630px;
+    background: url(../../../assets/all\ \ \ images/skill-shape.png) left bottom no-repeat;
+   
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+.skill_section .skill_images{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.skill_section .skill_images img{
+    max-width: 100%;
+}
+.skill_section .skill_content{}
+.skill_section .skill_content h6{
+    font-size: 27px;
+    color: #30d3a6;
+    letter-spacing: 10px;
+    padding-bottom: 40px;
+}
+.skill_section .skill_content h1{
+    font-size: 55px;
+    padding-bottom: 100px;
+}
+
+.skill_section .skill_content .progress_bar p{
+    font-size: 25px;
+    color: #515151;
+    font-family: 'nhu';
+    padding-bottom:20px
+}
+.owl-nav span{
+    display: none;
+}
+.skill_section .skill_content ul {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.skill_section .skill_content ul li a{
+    display: block;
+}
+.skill_section .skill_content ul li a img{
+    max-width: 100%;
+}
+
+@media(max-width:1366px){
+    .skill_section .skill_content h1{
+        font-size: 30px;
+    }
+
+    .barfiller {
+        height: 15px;
+        margin-bottom: 10px;
+    }
+
+}
+
+
+@media (min-width: 1200px) and (max-width: 1449px){ 
+
+    .skill_section::after{
+        height: 950px;
+        width: 336px;
+        background-size: contain;
+    }
+    .skill_section .skill_content h1{
+        font-size: 40px;
+    }
+    .skill_section .skill_content h6{
+        padding-bottom: 10px;
+        font-size: 20px;
+    }
+    .skill_section .skill_content h1{
+        padding-bottom: 20px;
+    }
+    .barfiller{
+        height: 15px;
+        margin-bottom: 10px;
+    }
+    .skill_section .skill_content .progress_bar p{
+        padding-bottom: 10px;
+        font-size: 16px;
+    }
+    .skill_section .skill_content ul li a{
+        height: 80px;
+        width: 80px;
+    }
+    .skill_section::after {
+        height: 720px;
+        width: 276px;
+        background-size: contain;
+    }
+    .skill_section {
+        padding-bottom: 50px;
+    }
+
+}
+
+
+@media (min-width: 992px) and (max-width: 1199px){ 
+
+    
+    .barfiller {
+        height: 15px;
+        margin-bottom: 10px;
+    }
+    .skill_section .skill_content h1{
+        font-size: 40px;
+    }
+
+
+}
+
+
+@media(max-width:1136px){ 
+
+
+    .skill_section::after{
+        height: 1130px;
+        width: 630px;
+        left: -170px;
+        top: 30px;
+        background-size: contain;
+    }
+    .barfiller {
+        height: 15px;
+        margin-bottom: 10px;
+    }
+
+
+}
+
+
+@media(max-width:991px){
+
+
+    .skill_section::after{
+        display: none;
+    }
+    .skill_section .skill_images{
+        display: block;
+        text-align: center;
+        padding-bottom: 50px;
+    }
+
+    
+    .barfiller{
+        height: 15px;
+    }
+
+    .skill_section .skill_content h1{
+        font-size: 30px;
+    }
+}
+
+
+@media(max-width:575px){ 
+
+
+    .skill_section{
+        padding: 80px 0;
+    }
+    .skill_section .skill_content h6{
+        font-size: 20px;
+    }
+    .skill_section .skill_content h1{
+        font-size: 25px;
+    }
+    .skill_section .skill_content .progress_item .progress{
+        height: 15px;
+    }
+    .skill_section .skill_content .progress_item{
+        margin-bottom: 60px;
+    }
+    .skill_section .skill_content .progress_item span{
+        top: -50px;
+    }
+    .skill_section .skill_content ul li a{
+        margin: 10px;
+    }
+
+}
