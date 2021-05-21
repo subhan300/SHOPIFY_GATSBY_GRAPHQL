@@ -116,7 +116,7 @@ export default function Home({ data }) {
               <h1>...............laoding</h1>
               :
               Products_data.map(({ node }) => {
-                // console.log(node.images[0].originalSrc, "val")
+               
                 const Img_Src = node.images[0].originalSrc
 
 
